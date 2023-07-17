@@ -1,0 +1,92 @@
+.toast-container {
+  position: fixed;
+  top: 65px;
+  z-index: 9999;
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.toast-container__toast {
+  margin: 0.2rem;
+  background-color: #f2dede;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 4px 3px 0 rgba(60, 64, 67, 0.302),
+    0 4px 8px 3px rgba(60, 64, 67, 0.149);
+  padding: 0.8rem;
+}
+.toast-container__text {
+  margin: 0;
+  color: #80282e;
+}
+
+.toast-container__success {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  z-index: 100;
+}
+.toast-container__success-toast {
+  margin: 0.2rem;
+  background-color: #dff0d8;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 4px 3px 0 rgba(60, 64, 67, 0.302),
+    0 4px 8px 3px rgba(60, 64, 67, 0.149);
+  padding: 0.8rem;
+}
+.toast-container__success-text {
+  margin: 0;
+  color: #006c32;
+}
+
+.toast-container-right {
+  position: fixed;
+  bottom: 70px;
+  z-index: 1400;
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end !important;
+  flex-direction: column;
+  margin-left: 6px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  right: 40px;
+}
+.toast-container-right__toast {
+  margin: 0.2rem;
+  background-color: #f2dede;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 4px 3px 0 rgba(60, 64, 67, 0.302),
+    0 4px 8px 3px rgba(60, 64, 67, 0.149);
+  padding: 0.8rem;
+}
+.toast-container-right__text {
+  margin: 0;
+  color: #80282e;
+}
+
+.toast-container__success-right {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 100;
+}
+.toast-container__success-right-toast {
+  margin: 0.2rem;
+  background-color: #dff0d8;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 0 4px 3px 0 rgba(60, 64, 67, 0.302),
+    0 4px 8px 3px rgba(60, 64, 67, 0.149);
+  padding: 0.8rem;
+}
+.toast-container__success-right-text {
+  margin: 0;
+  color: #006c32;
+} /*# sourceMappingURL=Toast.module.css.map */
