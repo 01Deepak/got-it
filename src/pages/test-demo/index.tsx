@@ -2,8 +2,10 @@ import useLoaderStore from '@/stores/pageLoader.store/pageLoaderStore'
 import { Button } from '@mui/material'
 import React from 'react'
 import useToast from '@/ui/Toast/hooks/useToast'
+import { useRouter } from 'next/router'
 
 const TestingPage = () => {
+  const router = useRouter();
   const {isLoading,showLoader,hideLoader}:any = useLoaderStore();
   const toaster = useToast();
 
@@ -43,6 +45,9 @@ const TestingPage = () => {
     <Button variant="outlined" onClick={handleLoader}>showLoader</Button>
     <Button variant="outlined" onClick={successToaster}>Success toaster</Button>
     <Button variant="outlined" onClick={errorToaster}>error toaster</Button>
+    <Button variant="outlined" onClick={() => router.push("/test-demo/dummy-products")}>products</Button>
+    <Button variant="outlined" onClick={() => router.push("/test-demo/client-side")}>client api</Button>
+
 
 
     </>
